@@ -3,24 +3,24 @@
 # it should have a color attribute, that is silver by default
 # it should have a method called "say" that returns whatever string is passed in, with "*~*" at the beginning and end of the string
 
-# class Unicorn
-#     attr_reader :name
-#     def initialize(name, alicorn_size)
-#         @name = name
-#         @alicorn_size = alicorn_size
-#         @color = 'silver'
-#     end
+class Unicorn
+    attr_reader :name
+    def initialize(name, alicorn_size)
+        @name = name
+        @alicorn_size = alicorn_size
+        @color = 'silver'
+    end
 
-#     def say(str)
-#         puts.insert("*~*".."*~*")
+    def say(str)
+        puts.insert("*~*".."*~*")
         
         
 
-#     end
-# end
+    end
+end
 
-# p unicorn1 = Unicorn.new("stewart", 20)
-# p unicorn1 = say = ("hello")
+p unicorn1 = Unicorn.new("stewart", 20)
+p unicorn1 = say = ("hello")
 
 #  Write a class called Vampire
 #  it should have a dynamic name attribute
@@ -29,23 +29,23 @@
 #  it should have a drink method. When called, the thirsty attribute changes to false
 
 
-# class Vampire
-#     attr_reader :name
-#     def initialize(name, color, pet)
-#     @name = name 
-#     @color = color
-#     @pet = pet || 'bat'
-#     @thirsty = true
+class Vampire
+    attr_reader :name
+    def initialize(name, color, pet)
+    @name = name 
+    @color = color
+    @pet = pet || 'bat'
+    @thirsty = true
 
-#     def drink(new_thirsty)
-#         if drink
-#         return thirsty = false
-#     end
-#     end
-# end
+    def drink(new_thirsty)
+        if drink
+        return thirsty = false
+    end
+    end
+end
 
-# p vampire1 = Vampire.new('vlad', 'black', nil)
-# p vampire1.drink(new_thirsty)
+p vampire1 = Vampire.new('vlad', 'black', nil)
+p vampire1.drink(new_thirsty)
 
 
 
@@ -57,25 +57,25 @@
 #  it should have a is_hungry attribute that is true by default
 #  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
 
-# class Dragon
-#     attr_reader :name
-#     def initialize(name, rider, color)
-#         @name = name
-#         @rider = rider
-#         @color = color
-#         is_hungry = true
-#     end
+class Dragon
+    attr_reader :name
+    def initialize(name, rider, color)
+        @name = name
+        @rider = rider
+        @color = color
+        is_hungry = true
+    end
 
-#     def eat(new_is_hungry)
-#         if eat >= 4
-#             return @is_hungry = false
-#         end
-#     end
-# end
+    def eat(new_is_hungry)
+        if eat >= 4
+            return @is_hungry = false
+        end
+    end
+end
 
 
-# p dragon1 = Dragon.new('cerberus', 'spongebob', 'gold')
-# p dragon1 = Dragon.new(eat = 5)
+p dragon1 = Dragon.new('cerberus', 'spongebob', 'gold')
+p dragon1 = Dragon.new(eat = 5)
 
 #  Write a Hobbit class
 #  it should have a dynamic name attribute (string)
@@ -85,6 +85,7 @@
 #  it should have an is_adult attribute (boolean) that is false by default. once a Hobbit is 33, it should be an adult
 #  it should have an is_old attribute that defaults to false. once a Hobbit is 101, it is old.
 #  it should have a has_ring attribute. If the Hobbit's name is "Frodo", true, if not, false.
+
 class Hobbit
     attr_reader
     def initialize (name, disposition)
